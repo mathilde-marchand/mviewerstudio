@@ -3,7 +3,7 @@ server {
     server_name  ${NGINX_HOST};
 
     location /mviewer/ {
-        proxy_pass http://mviewer:80/;
+        proxy_pass http://mviewer:8080/;
     }
 
     location /${MVIEWERSTUDIO_URL_PATH_PREFIX}/ {
