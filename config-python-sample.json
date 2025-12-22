@@ -1,15 +1,15 @@
 {
     "app_conf": {
         "studio_title": "Mviewer Studio",
-        "mviewer_version":  "3.13",
-        "mviewerstudio_version":  "4.2",
+        "mviewer_version":  "4",
+        "mviewerstudio_version":  "4.3-snapshot",
         "api": "api/app",
         "store_style_service": "api/style",
         "mviewer_instance": "/mviewer/",
         "publish_url": "/mviewer/?config=apps/public/{{config}}.xml",
         "conf_path_from_mviewer": "apps/store/",
         "mviewer_short_url": {
-            "used": true,
+            "used": false,
             "apps_folder": "store",
             "public_folder": "public"
         },
@@ -178,7 +178,7 @@
                     "title": "Catalogue de la Région Grand Est",
                     "url": "https://datagrandest.fr/geonetwork/srv/fre/csw",
                     "baseref": "https://datagrandest.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/"
-                }
+                }       
             ],
             "wms": [{
                 "title": "Serveur WMS de la Région",
