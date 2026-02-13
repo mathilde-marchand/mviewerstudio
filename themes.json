@@ -12,7 +12,7 @@
 },
 {
     "mviewer": "Démo Isochrones",
-    "url": "http://kartenn.region-bretagne.fr/kartoviz/demo/isochrones.xml",
+    "url": "http://kartenn.region-bretagne.fr/kartoviz/demo/isochroneAddon.xml",
     "themes": [
         {
             "id": "isochrones", "label": "Calcul isochrones"
