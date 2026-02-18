@@ -226,6 +226,9 @@ Ajoutez ensuite ce contenu en adaptant les valeurs (chemin, user...) selon votre
 
 fichier `mviewerstudio.service`
 
+  .. warning::
+    Nous conseillons de laisser la valeur du worker à 1 (voir issue #389)
+
  .. code-block:: sh
 
        [Unit]
@@ -243,6 +246,7 @@ fichier `mviewerstudio.service`
         WorkingDirectory=/home/monuser/mviewerstudio/srv/python
         ExecStart=/home/monuser/mviewerstudio/srv/python/.venv/bin/gunicorn \
             -b 127.0.0.1:5007 \
+            --workers=1 \
             --access-logfile /var/log/mviewerstudio/gunicorn-access.log \
             --log-level info \
             --error-logfile /var/log/mviewerstudio/gunicorn-error.log \
