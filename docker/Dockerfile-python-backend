@@ -44,4 +44,4 @@ ENV EXPORT_CONF_FOLDER=/home/apprunner/apps/store \
 # You will probably have to override this one on runtime with your custom config
 COPY config-python-sample.json mviewerstudio_backend/static/apps/config.json
 
-CMD ["gunicorn", "-w 4", "-b 0.0.0.0:8000", "mviewerstudio_backend.app:app"]
+CMD ["gunicorn", "-w 1", "-b 0.0.0.0:8000", "mviewerstudio_backend.app:app"]
