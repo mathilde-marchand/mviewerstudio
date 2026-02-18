@@ -63,8 +63,7 @@ def swagger_ui() -> Response:
     """
     Serve Swagger UI for backend API.
     """
-    return render_template_string(
-        """
+    return render_template_string("""
 <!doctype html>
 <html lang="en">
   <head>
@@ -84,8 +83,7 @@ def swagger_ui() -> Response:
     </script>
   </body>
 </html>
-        """
-    )
+        """)
 
 
 @basic_store.route("/swagger.yaml", methods=["GET"])
